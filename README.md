@@ -1,0 +1,1 @@
+# When-hovering-over-the-image-only-display-the-part-where-the-cursor-pointer-is-over-it
