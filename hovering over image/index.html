@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <div class="hole"></div>
+
+      <script>
+        window.onload = function() {
+        const div = document.querySelector('.hole');
+        let isIn = false;
+        div.addEventListener('mouseover', function() {
+        isIn = true;
+        });
+        div.addEventListener('mouseout', function() {
+          isIn = false;
+        });
+        div.addEventListener('mousemove', function() {
+          if (isIn) {
+        div.style.setProperty('--x', event.clientX + 'px');
+        div.style.setProperty('--y', event.clientY + 'px');
+    }
+  });
+}
+      </script>
+</body>
+</html>
